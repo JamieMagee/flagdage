@@ -12,7 +12,8 @@
         "printWidth": 90
       }
     ],
-    "func-names": "warn"
+    "func-names": ["error", "as-needed"],
+    "camelcase": "off"
   },
   "plugins": ["prettier"]
 }
