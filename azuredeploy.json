@@ -19,7 +19,21 @@
             "metadata": {
                 "description": "Storage Account type"
             }
-        }
+        },
+        "repoURL": {
+			"type": "string",
+			"defaultValue": "https://github.com/JamieMagee/flagdage.git",
+			"metadata": {
+				"description": "The URL for the GitHub repository that contains the project to deploy."
+			}
+		},
+		"branch": {
+			"type": "string",
+			"defaultValue": "master",
+			"metadata": {
+				"description": "The branch of the GitHub repository to use."
+			}
+		}
     },
     "variables": {
         "functionAppName": "[parameters('appName')]",
@@ -36,11 +50,11 @@
             "kind": "Storage",
             "sku": {
                 "name": "[parameters('storageAccountType')]"
-            }
+            }   
         },
         {
             "type": "Microsoft.Web/serverfarms",
-            "apiVersion": "2016-09-01",
+            "apiVersion": "2015-04-01",
             "name": "[variables('hostingPlanName')]",
             "location": "[resourceGroup().location]",
             "properties": {
@@ -89,7 +103,20 @@
                         }
                     ]
                 }
-            }          
+            },
+            "resources": [{
+                "apiVersion": "2015-08-01",
+                "name": "web",
+                "type": "sourcecontrols",
+                "dependsOn": [
+                    "[resourceId('Microsoft.Web/Sites', variables('functionAppName'))]"
+                ],
+                "properties": {
+                    "RepoUrl": "[parameters('repoURL')]",
+                    "branch": "[parameters('branch')]",
+                    "IsManualIntegration": true
+                }
+            }]          
         }
     ]
 }
