@@ -15,7 +15,7 @@
   "author": "Jamie Magee",
   "license": "MIT",
   "dependencies": {
-    "moment": "^2.20.1",
+    "moment": "^2.21.0",
     "moment-recur": "^1.0.7",
     "twitter": "^1.7.1"
   },
