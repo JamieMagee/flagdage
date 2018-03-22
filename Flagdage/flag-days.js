@@ -45,7 +45,17 @@ const flagDays = [
   new FlagDay('2018-06-15', 'Valdemarsdag og Genforeningsdag'),
   new FlagDay('2018-09-05', 'Danmarks Udsendte'),
   new FlagDay('2018-10-24', 'FN-dag', true, '🇺🇳'),
-  new FlagDay('2018-12-25', 'Juledag')
+  new FlagDay('2018-12-25', 'Juledag'),
+  // 2018
+  new FlagDay('2018-03-30', 'Langfredag', false),
+  new FlagDay('2018-04-01', 'Påskedag', false),
+  new FlagDay('2018-08-13', 'Copenhagen Pride', false, '🏳️‍🌈'),
+  new FlagDay('2018-08-14', 'Copenhagen Pride', false, '🏳️‍🌈'),
+  new FlagDay('2018-08-15', 'Copenhagen Pride', false, '🏳️‍🌈'),
+  new FlagDay('2018-08-16', 'Copenhagen Pride', false, '🏳️‍🌈'),
+  new FlagDay('2018-08-17', 'Copenhagen Pride', false, '🏳️‍🌈'),
+  new FlagDay('2018-08-18', 'Copenhagen Pride', false, '🏳️‍🌈'),
+  new FlagDay('2018-08-19', 'Copenhagen Pride', false, '🏳️‍🌈')
 ];
 
 module.exports = flagDays;
