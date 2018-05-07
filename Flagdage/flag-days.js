@@ -41,7 +41,6 @@ const flagDays = [
   new FlagDay('2018-05-26', 'Kronprins Frederiks fødselsdag'),
   new FlagDay('2018-06-05', 'Grundlovsdag'),
   new FlagDay('2018-06-07', 'Prins Joachims fødselsdag'),
-  new FlagDay('2018-06-11', 'Prins Henriks fødselsdag'),
   new FlagDay('2018-06-15', 'Valdemarsdag og Genforeningsdag'),
   new FlagDay('2018-09-05', 'Danmarks Udsendte'),
   new FlagDay('2018-10-24', 'FN-dag', true, '🇺🇳'),
