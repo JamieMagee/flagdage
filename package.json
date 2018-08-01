@@ -34,8 +34,17 @@
   "engines": {
     "node": ">=8.9.4"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"],
-    "*.json": ["prettier --write", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
