@@ -54,7 +54,9 @@ const flagDays = [
   new FlagDay('2018-08-16', 'Copenhagen Pride', false, '🏳️‍🌈'),
   new FlagDay('2018-08-17', 'Copenhagen Pride', false, '🏳️‍🌈'),
   new FlagDay('2018-08-18', 'Copenhagen Pride', false, '🏳️‍🌈'),
-  new FlagDay('2018-08-19', 'Copenhagen Pride', false, '🏳️‍🌈')
+  new FlagDay('2018-08-19', 'Copenhagen Pride', false, '🏳️‍🌈'),
+  new FlagDay('2018-08-28', 'Fransk statsbesøg', false, '🇫🇷'),
+  new FlagDay('2018-08-29', 'Fransk statsbesøg', false, '🇫🇷')
 ];
 
 module.exports = flagDays;
