@@ -1,7 +1,7 @@
 'use strict';
 
 const moment = require('moment');
-require('moment-recur');
+require('moment-recur-ts');
 
 class FlagDay {
   constructor(date, name, recurring = true, emoji = '🇩🇰') {
