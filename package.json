@@ -20,7 +20,7 @@
     "twitter": "1.7.1"
   },
   "devDependencies": {
-    "coveralls": "3.0.4",
+    "coveralls": "3.0.5",
     "eslint": "6.1.0",
     "prettier": "1.18.2",
     "husky": "2.7.0",
